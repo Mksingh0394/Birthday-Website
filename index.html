@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('Birthday_special-69c2a8fc4422e77755e9f8d3b4c47f4c5f3bd036/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+            }
+        }
+        .message {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff00ff;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .cake-container {
+            margin-top: 20px;
+            position: relative;
+        }
+        .candle {
+            width: 10px;
+            height: 50px;
+            background: #ff00ff;
+            margin: 0 auto;
+            position: relative;
+        }
+        .flame {
+            width: 10px;
+            height: 20px;
+            background: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            animation: flicker 1s infinite alternate;
+        }
+        @keyframes flicker {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+        <p class="message">Today, the stars shine brighter because it's your special day. Let’s make it dreamy, funny, and playful — just like you! ✨</p>
+        <button class="btn" onclick="showSurprise()">Click for a surprise! 🎁</button>
+        
+        <div class="cake-container">
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <p>Blow out the candle! 🎂 (Click the flame)</p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            alert("You're the cherry on my cake, the sparkle in my sky, and the giggle in my heart! 💕");
+        }
+
+        document.querySelector('.flame').addEventListener('click', function() {
+            this.style.display = 'none';
+            alert('🎉 Make a wish, my love! 🎂');
+        });
+    </script>
+</body>
+</html>
